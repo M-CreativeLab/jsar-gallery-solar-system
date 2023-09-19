@@ -7,6 +7,6 @@ model.getChildMeshes().forEach(mesh => {
   }
 });
 
-new Audio('https://ar.rokidcdn.com/web-assets/pages/sounds/violons11.wav')
-  .play();
+const sound = new Audio('https://ar.rokidcdn.com/web-assets/pages/sounds/violons11.wav');
+sound.play();
 
