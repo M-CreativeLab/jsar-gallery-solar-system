@@ -1,21 +1,21 @@
 {
-  "name": "your-jsar-widget-name",
-  "displayName": "JSAR Display Name",
+  "name": "jsar-gallery-solar-system",
+  "displayName": "微缩太阳系",
   "version": "1.0.0",
-  "description": "The template widget",
+  "description": "The mstudio gallery for JSAR",
   "main": "main.xsml",
   "scripts": {},
   "files": [
     "icon.png",
     "main.xsml",
     "lib/*.ts",
-    "model/welcome.glb"
+    "model/solar-system.glb"
   ],
   "icon3d": {
-    "base": "./model/welcome.glb"
+    "base": "./model/solar-system.glb"
   },
-  "author": "Yorkie Liu <yorkiefixer@gmail.com>",
-  "license": "Apache-2.0",
+  "author": "Yorkie Makoto <yorkiefixer@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "@yodaos-jsar/types": "^1.4.0"
   }

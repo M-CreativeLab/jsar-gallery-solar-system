@@ -1,7 +1,8 @@
 const scene = spaceDocument.scene as BABYLON.Scene;
-const animationGroups = scene.animationGroups.filter((ag) => ag.name.endsWith('#model'));
-
-if (animationGroups.length >= 1) {
-  animationGroups[0].start(true);
-}
-
+const model = scene.getNodeById('model');
+model.getChildMeshes().forEach(mesh => {
+    if (mesh.material.getClassName() === 'PBRMaterial') {
+        const mat = mesh.material as BABYLON.PBRMaterial;
+        mat.metallic = 0;
+    }
+});
